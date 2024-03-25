@@ -1,0 +1,632 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+/*
+font-family: "Permanent Marker", cursive;
+
+font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 0;
+    font-style: normal;
+**/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+h1,
+h2,
+h3,
+a {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 0;
+    font-style: normal;
+
+}
+
+p {
+    font-family: "Permanent Marker", cursive;
+}
+
+h1 {
+    text-align: center;
+}
+
+.section-principal {
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 400px;
+
+    background-image: url(../assets/img/local1.jpeg);
+
+}
+
+.barra-navegacion ul li {
+    float: left;
+    list-style-type: none;
+    padding-inline-start: 10px;
+
+}
+
+.barra-navegacion {
+    display: flex;
+    flex-wrap: nowrap;
+    list-style: none;
+    margin: 10px;
+    padding: 12px;
+    overflow: hidden;
+    gap: 1.875rem;
+    background-color: rgba(175, 173, 170, 0.788);
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 20px;
+
+}
+
+.section-principal .logo {
+    width: 60%;
+    height: auto;
+    margin: 5px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 20px;
+    position: relative;
+    bottom: 21.875rem;
+    right: 12.5rem;
+
+}
+
+.index-nosotros {
+    background-color: rgba(19, 19, 157, 0.737);
+
+}
+
+.bio-empresa {
+    margin-top: 5px;
+    background-color: rgba(147, 168, 199, 0.575);
+    padding: 150px;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.bio-empresa p {
+    /* align-items: center; */
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 1%;
+    padding-right: 5%;
+
+}
+
+.titulos {
+    background-color: rgba(4, 21, 98, 80%);
+    text-align: center;
+    color: white;
+    top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    border: 1px solid black;
+    border-radius: 20px;
+
+}
+
+.titulo-nosotros {
+    background-color: rgba(4, 21, 98, 80%);
+    text-align: center;
+    color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+    /* border: 1px solid black; */
+    border-radius: 20px;
+
+}
+
+.ultimo-ingreso {
+    width: 400px;
+    height: auto;
+    background-color: yellow;
+    color: red;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    /* display: flexbox; */
+    position: relative;
+    bottom: 10px;
+    right: 200px;
+}
+
+
+.img-ultimo-ingreso {
+    width: 50%;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flexbox;
+    position: relative;
+    bottom: 20rem;
+    right: 180px;
+
+
+}
+
+.boton-principal {
+    display: block;
+    margin-bottom: 10px;
+    position: relative;
+    bottom: 26.25rem;
+    left: 850px;
+}
+
+.boton-principal .km {
+    width: 250px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 20px;
+    position: relative;
+    bottom: 300px;
+    left: 250px;
+    border-width: 4px;
+    color: white;
+    background-image: url(../assets/img/boton-0km.png);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+
+
+}
+
+.boton-principal .usados {
+    width: 250px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 20px;
+    position: relative;
+    bottom: 150px;
+    left: 80px;
+    border-width: 4px;
+    color: white;
+    background-image: url(../assets/img/boton-usado.png);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.boton-principal .contacto {
+    width: 250px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 20px;
+    position: relative;
+    right: 250px;
+    border-width: 4px;
+    color: white;
+    /* background-color: rgb(54, 164, 176); */
+    background-image: url(../assets/img/boton-contacto.png);
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+
+}
+
+.boton-principal .nosotros {
+    width: 250px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 20px;
+    position: relative;
+    top: 150px;
+    right: 430px;
+    border-width: 4px;
+    color: white;
+    background-image: url(../assets/img/boton-nosotros.png);
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+
+}
+
+.pie-index {
+    width: 1520px;
+    height: 250px;
+    position: relative;
+    bottom: 110px;
+
+    background-color: rgb(198, 13, 13);
+}
+
+.pie-link {
+    width: 600px;
+    height: 220px;
+    position: relative;
+    top: 15px;
+    left: 50px;
+}
+
+.maps {
+    width: 750px;
+    height: 230px;
+    position: relative;
+    top: 7px;
+    /* bottom: 10px; */
+    left: 10px;
+    border-style: groove;
+}
+
+.datos-pie {
+    position: relative;
+    left: 1100px;
+    bottom: 200px;
+}
+
+.datos-pie p {
+
+    color: rgb(17, 17, 155);
+    border: black;
+
+}
+
+.dir {
+    width: 40px;
+    height: auto;
+    position: relative;
+    right: 50px;
+    top: 30px;
+}
+
+.tel {
+    width: 40px;
+    height: auto;
+    position: relative;
+    right: 50px;
+    top: 30px;
+}
+
+.section-0km {
+    background-image: url(../assets/img/fondo-ok.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-position-y: ; */
+    background-size: 900px;
+    background-blend-mode: lighten;
+    background-color: rgba(255, 255, 255, 0.573);
+
+}
+
+.pie-index-0km {
+    width: 1520px;
+    height: 250px;
+    position: relative;
+    bottom: 610px;
+
+    background-color: rgb(198, 13, 13);
+
+
+    /* bottom: 100px; */
+}
+
+.nuevo-principal {
+    width: 450px;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    position: relative;
+    left: 150px;
+
+}
+
+.nuevo-min1 {
+    width: 150px;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    position: relative;
+    left: 140px;
+
+}
+
+.nuevo-min2 {
+    width: 150px;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    position: relative;
+    left: 295px;
+    bottom: 105px;
+
+}
+
+.nuevo-min3 {
+    width: 150px;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    position: relative;
+    left: 450px;
+    bottom: 210px;
+
+}
+
+.marcas {
+    width: 350px;
+    height: 400px;
+    border: 2px solid black;
+    border-radius: 20px;
+    position: relative;
+    bottom: 650px;
+    left: 1000px;
+    /* align-items: center; */
+    text-align: center;
+}
+
+.mercedes {
+    position: relative;
+    top: 30px;
+    left: 10px;
+}
+
+.bmw {
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+.kia {
+    position: relative;
+    top: 120px;
+    right: 100px;
+}
+
+.ford {
+    position: relative;
+    top: 160px;
+    right: 10px;
+}
+
+.renault {
+    position: relative;
+    top: 230px;
+    right: 220px;
+}
+
+.citroen {
+    position: relative;
+    top: 250px;
+
+}
+
+.ultimo-ingreso-usados {
+    width: 500px;
+    height: auto;
+    background-color: yellow;
+    color: red;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    /* display: flexbox; */
+    position: relative;
+    left: 150px;
+
+}
+
+.usado-principal {
+    width: 450px;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    position: relative;
+
+
+}
+
+.usado-min1 {
+    width: 150px;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    position: relative;
+
+
+}
+
+.usado-min2 {
+    width: 150px;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    position: relative;
+    left: 260px;
+    bottom: 105px;
+
+}
+
+.usado-min3 {
+    width: 150px;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    position: relative;
+    left: 420px;
+    bottom: 210px;
+}
+
+.otros-usados {
+    width: 500px;
+    height: 550px;
+    border: 2px solid black;
+    border-radius: 20px;
+    position: relative;
+    left: 900px;
+    bottom: 520px;
+    background-color: aquamarine;
+    text-align: center;
+}
+
+.opcion1 {
+    width: 150px;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    position: relative;
+    top: 20px;
+    right: 120px;
+}
+
+.opcion2 {
+    width: 150px;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    position: relative;
+    left: 100px;
+    bottom: 90px;
+}
+
+.opcion3 {
+    width: 150px;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    position: relative;
+    bottom: 80px;
+    right: 120px;
+
+}
+
+.opcion4 {
+    width: 160px;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    position: relative;
+    bottom: 190px;
+    left: 100px;
+
+}
+
+.opcion5 {
+    width: 150px;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    position: relative;
+    bottom: 160px;
+    right: 120px;
+
+}
+
+.opcion6 {
+    width: 150px;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    position: relative;
+    bottom: 280px;
+    left: 100px;
+
+}
+
+.opcion7 {
+    width: 150px;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    position: relative;
+    bottom: 260px;
+    right: 120px;
+
+}
+
+.opcion8 {
+    width: 140px;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    position: relative;
+    bottom: 360px;
+    left: 100px;
+
+}
+
+.pie-index-usados {
+    width: 1520px;
+    height: 250px;
+    position: relative;
+    bottom: 510px;
+
+    background-color: rgb(198, 13, 13);
+
+}
+
+.formulario {
+    width: 400px;
+    height: 400px;
+    border: 2px solid black;
+    border-radius: 20px;
+    position: relative;
+    left: 100px;
+    background-color: rgba(192, 184, 174, 0.578);
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.donde-encontrarnos {
+    width: 400px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 20px;
+    position: relative;
+    left: 850px;
+    bottom: 400px;
+    background-color: rgba(148, 154, 217, 0.578);
+    text-align: center;
+    color: black;
+
+
+}
+
+.donde-encontrarnos .titulo-donde {
+    background-color: rgba(4, 21, 98, 80%);
+    border: 2px solid black;
+    border-radius: 20px;
+    text-align: center;
+    color: red;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+
+}
+
+.pie-index-contacto {
+    width: 1520px;
+    height: 250px;
+    position: relative;
+    bottom: 210px;
+
+    background-color: rgb(198, 13, 13);
+
+}
+
+.pie-index-nosotros {
+    width: 1520px;
+    height: 250px;
+    position: relative;
+    top: 5px;
+
+    background-color: rgb(198, 13, 13);
+
+}
