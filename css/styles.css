@@ -14,7 +14,24 @@ font-family: "Plus Jakarta Sans", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
 
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 14px;
+
+}
+
+.header-nosotros {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 14px;
+    background-color: rgb(144, 167, 199);
 }
 
 h1,
@@ -25,7 +42,6 @@ a {
     font-optical-sizing: auto;
     font-weight: 0;
     font-style: normal;
-
 }
 
 p {
@@ -36,75 +52,155 @@ h1 {
     text-align: center;
 }
 
-.section-principal {
+
+.general {
     width: 100%;
-    height: 500px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 400px;
-
     background-image: url(../assets/img/local1.jpeg);
-
+    background-position: top center;
+    /* align-items: start; */
+    background-repeat: no-repeat;
+    background-blend-mode: lighten;
+    background-color: rgba(255, 255, 255, 0.573);
 }
 
-.barra-navegacion ul li {
-    float: left;
-    list-style-type: none;
-    padding-inline-start: 10px;
-
-}
+/* 
+.grid {
+    /* background-image: url(../assets/img/fondo-ok.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 900px;
+    background-blend-mode: lighten;
+    background-color: rgba(255, 255, 255, 0.573); 
+display: grid;
+width: 100%;
+height: 100vh;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(5, 200px);
+justify-content: center;
+align-items: center;
+margin: auto;
+/* grid-template-areas:
+        "div1 div1 div1 div1 div1"
+        "div2 div2 div2 div3 div3"
+        "div2 div2 div2 div3 div3"
+        "div2 div2 div2 div3 div3"
+        "div4 div4 div4 div4 div4"
+    ; 
+} */
 
 .barra-navegacion {
     display: flex;
+    width: 1100px;
     flex-wrap: nowrap;
     list-style: none;
-    margin: 10px;
-    padding: 12px;
+    margin: 5px;
+    padding: 15px;
     overflow: hidden;
-    gap: 1.875rem;
-    background-color: rgba(175, 173, 170, 0.788);
+    gap: 1.25rem;
+    background-color: rgba(175, 173, 170, 0.863);
     text-align: center;
     border: 1px solid black;
-    border-radius: 20px;
+    border-radius: 10px;
+    position: relative;
+    left: 150px;
+    top: .3125rem;
+    justify-content: center;
+    align-items: center;
 
+
+}
+
+.barra-navegacion li a {
+    float: left;
+    text-decoration: none;
+    color: black;
+    list-style-type: none;
+    padding-inline-start: 50px;
+    font-weight: bold;
+    font-size: 24px;
+
+}
+
+.section-principal {
+    width: fit-content;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 25rem;
+    position: relative;
+    /* bottom: 32.5rem; */
+}
+
+.section-principal div {
+    width: fit-content;
 }
 
 .section-principal .logo {
     width: 60%;
     height: auto;
-    margin: 5px;
+    margin: 2px;
     background-color: transparent;
     border: 1px solid black;
     border-radius: 20px;
     position: relative;
-    bottom: 21.875rem;
-    right: 12.5rem;
+    bottom: 350px;
+    right: 110px;
+}
 
+.ultimo-ingreso {
+    width: 25rem;
+    height: auto;
+    background-color: yellow;
+    color: red;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    position: relative;
+    bottom: 50px;
+    right: 100px;
+}
+
+.img-ultimo-ingreso {
+    width: 50%;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flexbox;
+    position: relative;
+    bottom: 370px;
+    right: 80px;
 }
 
 .index-nosotros {
-    background-color: rgba(19, 19, 157, 0.737);
+    background-color: rgb(144, 167, 199);
+    display: flex;
+    align-items: flex-start;
+    align-content: center;
+    justify-content: space-between;
+    width: 100%;
+
 
 }
 
 .bio-empresa {
     margin-top: 5px;
     background-color: rgba(147, 168, 199, 0.575);
-    padding: 150px;
+    padding: 100px;
     margin-left: 5%;
     margin-right: 5%;
     border: 1px solid black;
     border-radius: 20px;
+    width: 80%;
+
 }
 
 .bio-empresa p {
-    /* align-items: center; */
     text-align: left;
     margin-left: 5%;
     margin-right: 5%;
     padding-left: 1%;
     padding-right: 5%;
+    font-size: 20px;
 
 }
 
@@ -118,7 +214,9 @@ h1 {
     margin-bottom: 5%;
     border: 1px solid black;
     border-radius: 20px;
-
+    width: 1100px;
+    position: relative;
+    left: 90px;
 }
 
 .titulo-nosotros {
@@ -127,45 +225,18 @@ h1 {
     color: white;
     margin-left: 5%;
     margin-right: 5%;
-    /* border: 1px solid black; */
     border-radius: 20px;
-
-}
-
-.ultimo-ingreso {
-    width: 400px;
-    height: auto;
-    background-color: yellow;
-    color: red;
-    text-align: center;
-    border: 1px solid black;
-    border-radius: 20px;
-    /* display: flexbox; */
-    position: relative;
-    bottom: 10px;
-    right: 200px;
-}
-
-
-.img-ultimo-ingreso {
-    width: 50%;
-    height: auto;
-    border: 1px solid black;
-    border-radius: 20px;
-    display: flexbox;
-    position: relative;
-    bottom: 20rem;
-    right: 180px;
-
-
+    width: 80%;
 }
 
 .boton-principal {
-    display: block;
+    display: flex;
     margin-bottom: 10px;
     position: relative;
-    bottom: 26.25rem;
-    left: 850px;
+    bottom: 60.9375rem;
+    left: 43.75rem;
+    width: min-content;
+
 }
 
 .boton-principal .km {
@@ -175,15 +246,13 @@ h1 {
     border-radius: 20px;
     position: relative;
     bottom: 300px;
-    left: 250px;
+    left: 315px;
     border-width: 4px;
     color: white;
     background-image: url(../assets/img/boton-0km.png);
     background-size: cover;
     background-position: center;
     cursor: pointer;
-
-
 }
 
 .boton-principal .usados {
@@ -192,8 +261,8 @@ h1 {
     border: 1px solid black;
     border-radius: 20px;
     position: relative;
-    bottom: 150px;
-    left: 80px;
+    bottom: 250px;
+    left: 270px;
     border-width: 4px;
     color: white;
     background-image: url(../assets/img/boton-usado.png);
@@ -208,10 +277,10 @@ h1 {
     border: 1px solid black;
     border-radius: 20px;
     position: relative;
-    right: 250px;
+    bottom: 200px;
+    left: 310px;
     border-width: 4px;
     color: white;
-    /* background-color: rgb(54, 164, 176); */
     background-image: url(../assets/img/boton-contacto.png);
     background-size: 40%;
     background-repeat: no-repeat;
@@ -226,8 +295,8 @@ h1 {
     border: 1px solid black;
     border-radius: 20px;
     position: relative;
-    top: 150px;
-    right: 430px;
+    bottom: 150px;
+    left: 260px;
     border-width: 4px;
     color: white;
     background-image: url(../assets/img/boton-nosotros.png);
@@ -239,86 +308,76 @@ h1 {
 }
 
 .pie-index {
-    width: 1520px;
-    height: 250px;
+    width: 100%;
+    height: 15.625rem;
     position: relative;
-    bottom: 110px;
-
+    bottom: 750px;
     background-color: rgb(198, 13, 13);
+
 }
 
 .pie-link {
-    width: 600px;
-    height: 220px;
+    width: 40%;
+    height: 13.75rem;
     position: relative;
-    top: 15px;
-    left: 50px;
-}
-
-.maps {
-    width: 750px;
-    height: 230px;
-    position: relative;
-    top: 7px;
-    /* bottom: 10px; */
-    left: 10px;
-    border-style: groove;
+    top: .9375rem;
+    left: 1.25rem;
 }
 
 .datos-pie {
     position: relative;
-    left: 1100px;
-    bottom: 200px;
+    left: 56.25rem;
+    bottom: 3.125rem;
+    width: fit-content;
 }
 
 .datos-pie p {
-
     color: rgb(17, 17, 155);
     border: black;
-
+    position: relative;
+    left: 9.375rem;
+    bottom: 10rem;
+    width: fit-content;
 }
 
 .dir {
     width: 40px;
     height: auto;
     position: relative;
-    right: 50px;
-    top: 30px;
+    left: 3.125rem;
+    bottom: 8.75rem;
 }
 
 .tel {
     width: 40px;
     height: auto;
     position: relative;
-    right: 50px;
-    top: 30px;
+    left: 50px;
+    bottom: 130px;
 }
 
 .section-0km {
     background-image: url(../assets/img/fondo-ok.png);
     background-repeat: no-repeat;
     background-position: center;
-    /* background-position-y: ; */
-    background-size: 900px;
+    background-position-y: ;
+    background-size: 56.25rem;
     background-blend-mode: lighten;
     background-color: rgba(255, 255, 255, 0.573);
 
 }
 
 .pie-index-0km {
-    width: 1520px;
+    width: 100%;
     height: 250px;
     position: relative;
     bottom: 610px;
-
     background-color: rgb(198, 13, 13);
 
-
-    /* bottom: 100px; */
 }
 
 .nuevo-principal {
-    width: 450px;
+    width: 28.125rem;
     height: auto;
     border: 2px solid black;
     border-radius: 20px;
@@ -328,7 +387,7 @@ h1 {
 }
 
 .nuevo-min1 {
-    width: 150px;
+    width: 9.375rem;
     height: auto;
     border: 2px solid black;
     border-radius: 20px;
@@ -338,7 +397,7 @@ h1 {
 }
 
 .nuevo-min2 {
-    width: 150px;
+    width: 9.375rem;
     height: auto;
     border: 2px solid black;
     border-radius: 20px;
@@ -349,7 +408,7 @@ h1 {
 }
 
 .nuevo-min3 {
-    width: 150px;
+    width: 9.375rem;
     height: auto;
     border: 2px solid black;
     border-radius: 20px;
@@ -360,14 +419,13 @@ h1 {
 }
 
 .marcas {
-    width: 350px;
-    height: 400px;
+    width: 21.875rem;
+    height: 25rem;
     border: 2px solid black;
     border-radius: 20px;
     position: relative;
     bottom: 650px;
     left: 1000px;
-    /* align-items: center; */
     text-align: center;
 }
 
@@ -408,62 +466,52 @@ h1 {
 }
 
 .ultimo-ingreso-usados {
-    width: 500px;
+    width: 31.25rem;
     height: auto;
     background-color: yellow;
     color: red;
     text-align: center;
     border: 1px solid black;
     border-radius: 20px;
-    /* display: flexbox; */
     position: relative;
     left: 150px;
 
 }
 
 .usado-principal {
-    width: 450px;
+    width: 28.125rem;
     height: auto;
     border: 2px solid black;
     border-radius: 20px;
     position: relative;
-
-
 }
 
 .usado-min1 {
-    width: 150px;
+    width: 9.375rem;
     height: auto;
     border: 2px solid black;
     border-radius: 20px;
     position: relative;
-
-
 }
 
 .usado-min2 {
-    width: 150px;
+    width: 9.375rem;
     height: auto;
     border: 2px solid black;
     border-radius: 20px;
     position: relative;
-    left: 260px;
-    bottom: 105px;
-
 }
 
 .usado-min3 {
-    width: 150px;
+    width: 9.375rem;
     height: auto;
     border: 2px solid black;
     border-radius: 20px;
     position: relative;
-    left: 420px;
-    bottom: 210px;
 }
 
 .otros-usados {
-    width: 500px;
+    width: 31.25rem;
     height: 550px;
     border: 2px solid black;
     border-radius: 20px;
@@ -475,7 +523,7 @@ h1 {
 }
 
 .opcion1 {
-    width: 150px;
+    width: 9.375rem;
     height: auto;
     border: 2px solid black;
     border-radius: 20px;
@@ -485,7 +533,7 @@ h1 {
 }
 
 .opcion2 {
-    width: 150px;
+    width: 9.375rem;
     height: auto;
     border: 2px solid black;
     border-radius: 20px;
@@ -495,7 +543,7 @@ h1 {
 }
 
 .opcion3 {
-    width: 150px;
+    width: 9.375rem;
     height: auto;
     border: 2px solid black;
     border-radius: 20px;
@@ -506,7 +554,7 @@ h1 {
 }
 
 .opcion4 {
-    width: 160px;
+    width: 10rem;
     height: auto;
     border: 2px solid black;
     border-radius: 20px;
@@ -517,7 +565,7 @@ h1 {
 }
 
 .opcion5 {
-    width: 150px;
+    width: 9.375rem;
     height: auto;
     border: 2px solid black;
     border-radius: 20px;
@@ -528,7 +576,7 @@ h1 {
 }
 
 .opcion6 {
-    width: 150px;
+    width: 9.375rem;
     height: auto;
     border: 2px solid black;
     border-radius: 20px;
@@ -539,7 +587,7 @@ h1 {
 }
 
 .opcion7 {
-    width: 150px;
+    width: 9.375rem;
     height: auto;
     border: 2px solid black;
     border-radius: 20px;
@@ -550,7 +598,7 @@ h1 {
 }
 
 .opcion8 {
-    width: 140px;
+    width: 8.75rem;
     height: auto;
     border: 2px solid black;
     border-radius: 20px;
@@ -561,8 +609,8 @@ h1 {
 }
 
 .pie-index-usados {
-    width: 1520px;
-    height: 250px;
+    width: 100%;
+    height: 15.625rem;
     position: relative;
     bottom: 510px;
 
@@ -571,8 +619,8 @@ h1 {
 }
 
 .formulario {
-    width: 400px;
-    height: 400px;
+    width: 25rem;
+    height: 25rem;
     border: 2px solid black;
     border-radius: 20px;
     position: relative;
@@ -584,8 +632,8 @@ h1 {
 }
 
 .donde-encontrarnos {
-    width: 400px;
-    height: 200px;
+    width: 25rem;
+    height: 12.5rem;
     border: 2px solid black;
     border-radius: 20px;
     position: relative;
@@ -594,8 +642,6 @@ h1 {
     background-color: rgba(148, 154, 217, 0.578);
     text-align: center;
     color: black;
-
-
 }
 
 .donde-encontrarnos .titulo-donde {
@@ -608,25 +654,223 @@ h1 {
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 5%;
-
 }
 
 .pie-index-contacto {
-    width: 1520px;
-    height: 250px;
+    width: 100%;
+    height: 15.625rem;
     position: relative;
     bottom: 210px;
-
     background-color: rgb(198, 13, 13);
 
 }
 
 .pie-index-nosotros {
-    width: 1520px;
+    width: 100%;
     height: 250px;
     position: relative;
     top: 5px;
-
     background-color: rgb(198, 13, 13);
 
+}
+
+@media (max-width:1440px) {
+
+    .barra-navegacion {
+        width: 80vw;
+        position: relative;
+        left: 50px;
+
+    }
+
+}
+
+@media (max-width:1024px) {
+    header {
+        /* justify-content: space-around; */
+    }
+
+    .barra-navegacion {
+        width: 90vw;
+        position: relative;
+        left: 50px;
+    }
+
+    .barra-navegacion li a {
+        font-size: 20px;
+    }
+
+    .bio-empresa {
+        width: 132vh;
+        position: relative;
+        left: 28px;
+    }
+
+    .titulo-nosotros {
+        width: 132vh;
+        position: relative;
+        left: 30px;
+    }
+
+    .datos-pie {
+        position: relative;
+        left: 600px;
+    }
+
+}
+
+@media (max-width:768px) {
+
+    .header-nosotros {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .barra-navegacion {
+        width: 75vw;
+        position: relative;
+        left: 5px;
+        padding: 5px;
+
+    }
+
+    .barra-navegacion li a {
+        padding-inline-start: 20px;
+        font-size: 18px;
+    }
+
+    .titulo-nosotros {
+        width: 65vh;
+        /* position: relative; */
+        /* left: 10px; */
+    }
+
+    .bio-empresa {
+        width: 65vw;
+        position: relative;
+        left: 10px;
+    }
+
+    .datos-pie {
+        position: relative;
+        right: 350px;
+    }
+}
+
+@media (max-width:768px) {
+
+    .header-nosotros {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .barra-navegacion {
+        width: 65vh;
+        padding-bottom: 10px;
+        margin: 0;
+    }
+
+    .barra-navegacion li a {
+        font-size: .75rem;
+
+    }
+
+    .titulo-nosotros {
+        width: 60vh;
+    }
+
+    .datos-pie {
+        position: relative;
+        left: 350px;
+    }
+
+    .bio-empresa {
+        padding: 0;
+    }
+}
+
+@media (max-width:425px) {
+    body {
+        width: 42.5vh;
+    }
+
+    .header-nosotros {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        width: 42.5vh;
+    }
+
+    .index-nosotros {
+        width: 42.5vh;
+    }
+
+    footer {
+        width: 42.5vh;
+    }
+
+    .barra-navegacion {
+        flex-direction: column;
+        width: 35vh;
+        padding-bottom: 0;
+        position: relative;
+        left: 1px;
+
+    }
+
+    .barra-navegacion li a {
+        font-size: 10px;
+    }
+
+    .titulo-nosotros {
+        width: 35vh;
+        position: relative;
+        left: 15px;
+    }
+
+
+    .bio-empresa {
+        width: 32vh;
+        align-items: self-start;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .bio-empresa p {
+        width: 100%;
+        align-items: center;
+        text-align: left;
+        font-size: 12px;
+    }
+
+    .pie-index-nosotros {
+        width: 42.5vh;
+    }
+
+    .datos-pie {
+        position: relative;
+        left: 100px;
+        bottom: 150px;
+    }
+
+    .datos-pie p {
+        font-size: 12px;
+        position: relative;
+        left: 50px;
+        top: 0;
+
+    }
+
+    .dir {
+        position: relative;
+        top: 8px;
+    }
+
+    .tel {
+        position: relative;
+        top: 8px;
+    }
 }
