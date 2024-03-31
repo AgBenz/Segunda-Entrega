@@ -22,7 +22,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0px 14px;
-
 }
 
 .header-nosotros {
@@ -57,36 +56,10 @@ h1 {
     width: 100%;
     background-image: url(../assets/img/local1.jpeg);
     background-position: top center;
-    /* align-items: start; */
     background-repeat: no-repeat;
     background-blend-mode: lighten;
     background-color: rgba(255, 255, 255, 0.573);
 }
-
-/* 
-.grid {
-    /* background-image: url(../assets/img/fondo-ok.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 900px;
-    background-blend-mode: lighten;
-    background-color: rgba(255, 255, 255, 0.573); 
-display: grid;
-width: 100%;
-height: 100vh;
-grid-template-columns: repeat(5, 1fr);
-grid-template-rows: repeat(5, 200px);
-justify-content: center;
-align-items: center;
-margin: auto;
-/* grid-template-areas:
-        "div1 div1 div1 div1 div1"
-        "div2 div2 div2 div3 div3"
-        "div2 div2 div2 div3 div3"
-        "div2 div2 div2 div3 div3"
-        "div4 div4 div4 div4 div4"
-    ; 
-} */
 
 .barra-navegacion {
     display: flex;
@@ -106,8 +79,6 @@ margin: auto;
     top: .3125rem;
     justify-content: center;
     align-items: center;
-
-
 }
 
 .barra-navegacion li a {
@@ -118,7 +89,6 @@ margin: auto;
     padding-inline-start: 50px;
     font-weight: bold;
     font-size: 24px;
-
 }
 
 .section-principal {
@@ -174,9 +144,9 @@ margin: auto;
 .index-nosotros {
     background-color: rgb(144, 167, 199);
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     align-content: center;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
 
 
@@ -214,9 +184,9 @@ margin: auto;
     margin-bottom: 5%;
     border: 1px solid black;
     border-radius: 20px;
-    width: 1100px;
+    width: 150vh;
     position: relative;
-    left: 90px;
+    left: 25px;
 }
 
 .titulo-nosotros {
@@ -253,7 +223,15 @@ margin: auto;
     background-size: cover;
     background-position: center;
     cursor: pointer;
+    font-size: 20px;
 }
+
+.boton-principal .km:hover {
+    opacity: 0.7;
+    color: black;
+    font-size: 18px;
+}
+
 
 .boton-principal .usados {
     width: 250px;
@@ -269,7 +247,15 @@ margin: auto;
     background-size: cover;
     background-position: center;
     cursor: pointer;
+    font-size: 20px;
 }
+
+.boton-principal .usados:hover {
+    opacity: 0.7;
+    color: black;
+    font-size: 18px;
+}
+
 
 .boton-principal .contacto {
     width: 250px;
@@ -286,8 +272,15 @@ margin: auto;
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
-
+    font-size: 20px;
 }
+
+.boton-principal .contacto:hover {
+    opacity: 0.7;
+    color: black;
+    font-size: 18px;
+}
+
 
 .boton-principal .nosotros {
     width: 250px;
@@ -304,7 +297,14 @@ margin: auto;
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
+    font-size: 20px;
 
+}
+
+.boton-principal .nosotros:hover {
+    opacity: 0.7;
+    color: black;
+    font-size: 18px;
 }
 
 .pie-index {
@@ -313,7 +313,6 @@ margin: auto;
     position: relative;
     bottom: 750px;
     background-color: rgb(198, 13, 13);
-
 }
 
 .pie-link {
@@ -364,7 +363,6 @@ margin: auto;
     background-size: 56.25rem;
     background-blend-mode: lighten;
     background-color: rgba(255, 255, 255, 0.573);
-
 }
 
 .pie-index-0km {
@@ -373,7 +371,6 @@ margin: auto;
     position: relative;
     bottom: 610px;
     background-color: rgb(198, 13, 13);
-
 }
 
 .nuevo-principal {
@@ -383,7 +380,6 @@ margin: auto;
     border-radius: 20px;
     position: relative;
     left: 150px;
-
 }
 
 .nuevo-min1 {
@@ -393,7 +389,6 @@ margin: auto;
     border-radius: 20px;
     position: relative;
     left: 140px;
-
 }
 
 .nuevo-min2 {
@@ -404,7 +399,6 @@ margin: auto;
     position: relative;
     left: 295px;
     bottom: 105px;
-
 }
 
 .nuevo-min3 {
@@ -415,7 +409,6 @@ margin: auto;
     position: relative;
     left: 450px;
     bottom: 210px;
-
 }
 
 .marcas {
@@ -462,7 +455,6 @@ margin: auto;
 .citroen {
     position: relative;
     top: 250px;
-
 }
 
 .ultimo-ingreso-usados {
@@ -475,7 +467,6 @@ margin: auto;
     border-radius: 20px;
     position: relative;
     left: 150px;
-
 }
 
 .usado-principal {
@@ -484,6 +475,32 @@ margin: auto;
     border: 2px solid black;
     border-radius: 20px;
     position: relative;
+}
+
+.grid-usados {
+    display: grid;
+    margin: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 3px;
+}
+
+.usado {
+    overflow: hidden;
+    border-radius: 30px;
+    border: 2px solid black;
+}
+
+.usado:hover {
+    opacity: 0.5;
+}
+
+.grid-usados img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    display: block;
+
 }
 
 .usado-min1 {
@@ -522,6 +539,7 @@ margin: auto;
     text-align: center;
 }
 
+/* 
 .opcion1 {
     width: 9.375rem;
     height: auto;
@@ -606,7 +624,7 @@ margin: auto;
     bottom: 360px;
     left: 100px;
 
-}
+} */
 
 .pie-index-usados {
     width: 100%;
@@ -632,7 +650,7 @@ margin: auto;
 }
 
 .donde-encontrarnos {
-    width: 25rem;
+    width: 50vh;
     height: 12.5rem;
     border: 2px solid black;
     border-radius: 20px;
@@ -700,6 +718,20 @@ margin: auto;
         font-size: 20px;
     }
 
+    .titulos {
+        width: 132vh;
+    }
+
+    .donde-encontrarnos {
+        position: relative;
+        left: 550px;
+    }
+
+    .formulario {
+        position: relative;
+        left: 75px;
+    }
+
     .bio-empresa {
         width: 132vh;
         position: relative;
@@ -728,7 +760,7 @@ margin: auto;
     }
 
     .barra-navegacion {
-        width: 75vw;
+        width: 95vw;
         position: relative;
         left: 5px;
         padding: 5px;
@@ -740,10 +772,20 @@ margin: auto;
         font-size: 18px;
     }
 
+    .titulos {
+        width: 85vh;
+        position: relative;
+        right: 10px;
+
+    }
+
+    .pie-index-contacto {
+        position: relative;
+        top: 200px;
+    }
+
     .titulo-nosotros {
         width: 65vh;
-        /* position: relative; */
-        /* left: 10px; */
     }
 
     .bio-empresa {
@@ -767,7 +809,7 @@ margin: auto;
     }
 
     .barra-navegacion {
-        width: 65vh;
+        width: 95vw;
         padding-bottom: 10px;
         margin: 0;
     }
@@ -775,6 +817,19 @@ margin: auto;
     .barra-navegacion li a {
         font-size: .75rem;
 
+    }
+
+    .titulos {
+        font-size: 18px;
+        position: relative;
+        left: 6.25rem;
+        margin-top: .3125rem;
+    }
+
+    .donde-encontrarnos {
+        position: relative;
+        top: 20px;
+        left: 100px;
     }
 
     .titulo-nosotros {
@@ -801,23 +856,23 @@ margin: auto;
         align-items: center;
         justify-content: center;
         padding: 0;
-        width: 42.5vh;
+        width: 69vh;
     }
 
     .index-nosotros {
-        width: 42.5vh;
+        width: 69vh;
     }
 
     footer {
-        width: 42.5vh;
+        width: 100%;
     }
 
     .barra-navegacion {
         flex-direction: column;
-        width: 35vh;
+        width: 45vh;
         padding-bottom: 0;
         position: relative;
-        left: 1px;
+        left: 60px;
 
     }
 
@@ -825,12 +880,35 @@ margin: auto;
         font-size: 10px;
     }
 
+    .titulos {
+        width: 100%;
+        position: relative;
+        left: 60px;
+
+    }
+
     .titulo-nosotros {
         width: 35vh;
         position: relative;
         left: 15px;
+        margin-top: 5px;
+        margin-bottom: .625rem;
+        padding-top: 5px;
+        font-size: 15px;
     }
 
+    .formulario {
+        width: 150%;
+        height: auto;
+        position: relative;
+        left: 0.34rem;
+        padding-bottom: 10px;
+    }
+
+    .donde-encontrarnos {
+        position: relative;
+        left: 50px;
+    }
 
     .bio-empresa {
         width: 32vh;
@@ -846,13 +924,17 @@ margin: auto;
         font-size: 12px;
     }
 
+    .pie-index-contacto {
+        width: 150%;
+    }
+
     .pie-index-nosotros {
-        width: 42.5vh;
+        width: 69vh;
     }
 
     .datos-pie {
         position: relative;
-        left: 100px;
+        left: 150px;
         bottom: 150px;
     }
 
