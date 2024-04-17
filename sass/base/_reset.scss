@@ -29,3 +29,18 @@ p {
 h1 {
     text-align: center;
 }
+
+.titulos {
+    background-color: rgba(4, 21, 98, 80%);
+    text-align: center;
+    color: white;
+    top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 150vh;
+    position: relative;
+    left: 25px;
+}

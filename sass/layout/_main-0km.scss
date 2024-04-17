@@ -7,50 +7,51 @@
     background-blend-mode: lighten;
     background-color: rgba(255, 255, 255, 0.573);
 
-    .marcas {
-        width: 21.875rem;
-        height: 25rem;
-        border: 2px solid black;
-        border-radius: 20px;
+}
+
+.marcas {
+    width: 21.875rem;
+    height: 25rem;
+    border: 2px solid black;
+    border-radius: 20px;
+    position: relative;
+    bottom: 350px;
+    left: 800px;
+    text-align: center;
+
+    .mercedes {
         position: relative;
-        bottom: 350px;
-        left: 800px;
-        text-align: center;
+        top: 30px;
+        left: 10px;
+    }
 
-        .mercedes {
-            position: relative;
-            top: 30px;
-            left: 10px;
-        }
+    .bmw {
+        position: relative;
+        top: 50px;
+        left: 50px;
+    }
 
-        .bmw {
-            position: relative;
-            top: 50px;
-            left: 50px;
-        }
+    .kia {
+        position: relative;
+        top: 120px;
+        right: 100px;
+    }
 
-        .kia {
-            position: relative;
-            top: 120px;
-            right: 100px;
-        }
+    .ford {
+        position: relative;
+        top: 160px;
+        right: 10px;
+    }
 
-        .ford {
-            position: relative;
-            top: 160px;
-            right: 10px;
-        }
+    .renault {
+        position: relative;
+        top: 230px;
+        right: 200px;
+    }
 
-        .renault {
-            position: relative;
-            top: 230px;
-            right: 220px;
-        }
-
-        .citroen {
-            position: relative;
-            top: 250px;
-        }
+    .citroen {
+        position: relative;
+        top: 250px;
     }
 }
 
@@ -58,6 +59,46 @@
     width: 100%;
     height: 250px;
     position: relative;
-    bottom: 210px;
+    top: 70px;
     background-color: rgb(198, 13, 13);
+
+    .pie-link {
+        width: 40%;
+        height: 13.75rem;
+        position: relative;
+        top: .9375rem;
+        left: 1.25rem;
+    }
+
+    .datos-pie {
+        position: relative;
+        left: 56.25rem;
+        bottom: 3.125rem;
+        width: fit-content;
+
+        p {
+            color: rgb(17, 17, 155);
+            border: black;
+            position: relative;
+            left: 9.375rem;
+            bottom: 10rem;
+            width: fit-content;
+        }
+
+        .dir {
+            width: 40px;
+            height: auto;
+            position: relative;
+            left: 3.125rem;
+            bottom: 8.75rem;
+        }
+
+        .tel {
+            width: 40px;
+            height: auto;
+            position: relative;
+            left: 50px;
+            bottom: 130px;
+        }
+    }
 }

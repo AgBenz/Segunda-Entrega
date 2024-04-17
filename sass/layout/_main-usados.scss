@@ -88,4 +88,44 @@
 
     background-color: rgb(198, 13, 13);
 
+    .pie-link {
+        width: 40%;
+        height: 13.75rem;
+        position: relative;
+        top: .9375rem;
+        left: 1.25rem;
+    }
+
+    .datos-pie {
+        position: relative;
+        left: 56.25rem;
+        bottom: 3.125rem;
+        width: fit-content;
+
+        p {
+            color: rgb(17, 17, 155);
+            border: black;
+            position: relative;
+            left: 9.375rem;
+            bottom: 10rem;
+            width: fit-content;
+        }
+
+        .dir {
+            width: 40px;
+            height: auto;
+            position: relative;
+            left: 3.125rem;
+            bottom: 8.75rem;
+        }
+
+        .tel {
+            width: 40px;
+            height: auto;
+            position: relative;
+            left: 50px;
+            bottom: 130px;
+        }
+    }
+
 }
