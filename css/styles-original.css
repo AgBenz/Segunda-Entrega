@@ -1,0 +1,960 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+/*
+font-family: "Permanent Marker", cursive;
+
+font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 0;
+    font-style: normal;
+**/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 14px;
+}
+
+.header-nosotros {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 14px;
+    background-color: rgb(144, 167, 199);
+}
+
+h1,
+h2,
+h3,
+a {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 0;
+    font-style: normal;
+}
+
+p {
+    font-family: "Permanent Marker", cursive;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+.general {
+    width: 100%;
+    background-image: url(../assets/img/local1.jpeg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-blend-mode: lighten;
+    background-color: rgba(255, 255, 255, 0.573);
+}
+
+.barra-navegacion {
+    display: flex;
+    width: 1100px;
+    flex-wrap: nowrap;
+    list-style: none;
+    margin: 5px;
+    padding: 15px;
+    overflow: hidden;
+    gap: 1.25rem;
+    background-color: rgba(175, 173, 170, 0.863);
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    position: relative;
+    left: 150px;
+    top: .3125rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.barra-navegacion li a {
+    float: left;
+    text-decoration: none;
+    color: black;
+    list-style-type: none;
+    padding-inline-start: 50px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.section-principal {
+    width: fit-content;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 25rem;
+    position: relative;
+    /* bottom: 32.5rem; */
+}
+
+.section-principal div {
+    width: fit-content;
+}
+
+.section-principal .logo {
+    width: 60%;
+    height: auto;
+    margin: 2px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 20px;
+    position: relative;
+    bottom: 350px;
+    right: 110px;
+}
+
+.ultimo-ingreso {
+    width: 25rem;
+    height: auto;
+    background-color: yellow;
+    color: red;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    position: relative;
+    bottom: 50px;
+    right: 100px;
+}
+
+.img-ultimo-ingreso {
+    width: 50%;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flexbox;
+    position: relative;
+    bottom: 370px;
+    right: 80px;
+}
+
+.index-nosotros {
+    background-color: rgb(144, 167, 199);
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    width: 100%;
+
+
+}
+
+.bio-empresa {
+    margin-top: 5px;
+    background-color: rgba(147, 168, 199, 0.575);
+    padding: 100px;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 80%;
+
+}
+
+.bio-empresa p {
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 1%;
+    padding-right: 5%;
+    font-size: 20px;
+
+}
+
+.titulos {
+    background-color: rgba(4, 21, 98, 80%);
+    text-align: center;
+    color: white;
+    top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 150vh;
+    position: relative;
+    left: 25px;
+}
+
+.titulo-nosotros {
+    background-color: rgba(4, 21, 98, 80%);
+    text-align: center;
+    color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 20px;
+    width: 80%;
+}
+
+.boton-principal {
+    display: flex;
+    margin-bottom: 10px;
+    position: relative;
+    bottom: 60.9375rem;
+    left: 43.75rem;
+    width: min-content;
+
+}
+
+.boton-principal .km {
+    width: 250px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 20px;
+    position: relative;
+    bottom: 300px;
+    left: 315px;
+    border-width: 4px;
+    color: white;
+    background-image: url(../assets/img/boton-0km.png);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.boton-principal .km:hover {
+    opacity: 0.7;
+    color: black;
+    font-size: 18px;
+}
+
+
+.boton-principal .usados {
+    width: 250px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 20px;
+    position: relative;
+    bottom: 250px;
+    left: 270px;
+    border-width: 4px;
+    color: white;
+    background-image: url(../assets/img/boton-usado.png);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.boton-principal .usados:hover {
+    opacity: 0.7;
+    color: black;
+    font-size: 18px;
+}
+
+
+.boton-principal .contacto {
+    width: 250px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 20px;
+    position: relative;
+    bottom: 200px;
+    left: 310px;
+    border-width: 4px;
+    color: white;
+    background-image: url(../assets/img/boton-contacto.png);
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.boton-principal .contacto:hover {
+    opacity: 0.7;
+    color: black;
+    font-size: 18px;
+}
+
+
+.boton-principal .nosotros {
+    width: 250px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 20px;
+    position: relative;
+    bottom: 150px;
+    left: 260px;
+    border-width: 4px;
+    color: white;
+    background-image: url(../assets/img/boton-nosotros.png);
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    font-size: 20px;
+
+}
+
+.boton-principal .nosotros:hover {
+    opacity: 0.7;
+    color: black;
+    font-size: 18px;
+}
+
+.pie-index {
+    width: 100%;
+    height: 15.625rem;
+    position: relative;
+    bottom: 750px;
+    background-color: rgb(198, 13, 13);
+}
+
+.pie-link {
+    width: 40%;
+    height: 13.75rem;
+    position: relative;
+    top: .9375rem;
+    left: 1.25rem;
+}
+
+.datos-pie {
+    position: relative;
+    left: 56.25rem;
+    bottom: 3.125rem;
+    width: fit-content;
+}
+
+.datos-pie p {
+    color: rgb(17, 17, 155);
+    border: black;
+    position: relative;
+    left: 9.375rem;
+    bottom: 10rem;
+    width: fit-content;
+}
+
+.dir {
+    width: 40px;
+    height: auto;
+    position: relative;
+    left: 3.125rem;
+    bottom: 8.75rem;
+}
+
+.tel {
+    width: 40px;
+    height: auto;
+    position: relative;
+    left: 50px;
+    bottom: 130px;
+}
+
+.section-0km {
+    background-image: url(../assets/img/fondo-ok.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-position-y: ; */
+    background-size: 56.25rem;
+    background-blend-mode: lighten;
+    background-color: rgba(255, 255, 255, 0.573);
+}
+
+.pie-index-0km {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    bottom: 210px;
+    background-color: rgb(198, 13, 13);
+}
+
+#carouselExampleIndicators {
+    width: 500px;
+    height: 300px;
+
+}
+
+/* 
+.nuevo-principal {
+    width: 28.125rem;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    position: relative;
+    left: 150px;
+}
+
+.nuevo-min1 {
+    width: 9.375rem;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    position: relative;
+    left: 140px;
+}
+
+.nuevo-min2 {
+    width: 9.375rem;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    position: relative;
+    left: 295px;
+    bottom: 105px;
+}
+
+.nuevo-min3 {
+    width: 9.375rem;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    position: relative;
+    left: 450px;
+    bottom: 210px;
+} */
+
+.marcas {
+    width: 21.875rem;
+    height: 25rem;
+    border: 2px solid black;
+    border-radius: 20px;
+    position: relative;
+    bottom: 350px;
+    left: 800px;
+    text-align: center;
+}
+
+.mercedes {
+    position: relative;
+    top: 30px;
+    left: 10px;
+}
+
+.bmw {
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+.kia {
+    position: relative;
+    top: 120px;
+    right: 100px;
+}
+
+.ford {
+    position: relative;
+    top: 160px;
+    right: 10px;
+}
+
+.renault {
+    position: relative;
+    top: 230px;
+    right: 220px;
+}
+
+.citroen {
+    position: relative;
+    top: 250px;
+}
+
+.ultimo-ingreso-usados {
+    width: 31.25rem;
+    height: auto;
+    background-color: yellow;
+    color: red;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    position: relative;
+    left: 150px;
+}
+
+.usado-principal {
+    width: 28.125rem;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    position: relative;
+}
+
+.grid-usados {
+    display: grid;
+    margin: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 3px;
+}
+
+.usado {
+    overflow: hidden;
+    border-radius: 30px;
+    border: 2px solid black;
+}
+
+.usado:hover {
+    opacity: 0.5;
+}
+
+.grid-usados img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    display: block;
+
+}
+
+.usado-min1 {
+    width: 9.375rem;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    position: relative;
+}
+
+.usado-min2 {
+    width: 9.375rem;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    position: relative;
+}
+
+.usado-min3 {
+    width: 9.375rem;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    position: relative;
+}
+
+.otros-usados {
+    width: 31.25rem;
+    height: 550px;
+    border: 2px solid black;
+    border-radius: 20px;
+    position: relative;
+    left: 900px;
+    bottom: 520px;
+    background-color: aquamarine;
+    text-align: center;
+}
+
+/* 
+.opcion1 {
+    width: 9.375rem;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    position: relative;
+    top: 20px;
+    right: 120px;
+}
+
+.opcion2 {
+    width: 9.375rem;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    position: relative;
+    left: 100px;
+    bottom: 90px;
+}
+
+.opcion3 {
+    width: 9.375rem;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    position: relative;
+    bottom: 80px;
+    right: 120px;
+
+}
+
+.opcion4 {
+    width: 10rem;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    position: relative;
+    bottom: 190px;
+    left: 100px;
+
+}
+
+.opcion5 {
+    width: 9.375rem;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    position: relative;
+    bottom: 160px;
+    right: 120px;
+
+}
+
+.opcion6 {
+    width: 9.375rem;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    position: relative;
+    bottom: 280px;
+    left: 100px;
+
+}
+
+.opcion7 {
+    width: 9.375rem;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    position: relative;
+    bottom: 260px;
+    right: 120px;
+
+}
+
+.opcion8 {
+    width: 8.75rem;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    position: relative;
+    bottom: 360px;
+    left: 100px;
+
+} */
+
+.pie-index-usados {
+    width: 100%;
+    height: 15.625rem;
+    position: relative;
+    bottom: 510px;
+
+    background-color: rgb(198, 13, 13);
+
+}
+
+.formulario {
+    width: 25rem;
+    height: 25rem;
+    border: 2px solid black;
+    border-radius: 20px;
+    position: relative;
+    left: 100px;
+    background-color: rgba(192, 184, 174, 0.578);
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.donde-encontrarnos {
+    width: 50vh;
+    height: 12.5rem;
+    border: 2px solid black;
+    border-radius: 20px;
+    position: relative;
+    left: 850px;
+    bottom: 400px;
+    background-color: rgba(148, 154, 217, 0.578);
+    text-align: center;
+    color: black;
+}
+
+.donde-encontrarnos .titulo-donde {
+    background-color: rgba(4, 21, 98, 80%);
+    border: 2px solid black;
+    border-radius: 20px;
+    text-align: center;
+    color: red;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+
+.pie-index-contacto {
+    width: 100%;
+    height: 15.625rem;
+    position: relative;
+    bottom: 210px;
+    background-color: rgb(198, 13, 13);
+
+}
+
+.pie-index-nosotros {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    top: 5px;
+    background-color: rgb(198, 13, 13);
+
+}
+
+@media (max-width:1440px) {
+
+    .barra-navegacion {
+        width: 80vw;
+        position: relative;
+        left: 50px;
+
+    }
+
+}
+
+@media (max-width:1024px) {
+    header {
+        /* justify-content: space-around; */
+    }
+
+    .barra-navegacion {
+        width: 90vw;
+        position: relative;
+        left: 50px;
+    }
+
+    .barra-navegacion li a {
+        font-size: 20px;
+    }
+
+    .titulos {
+        width: 132vh;
+    }
+
+    .marcas {
+        position: relative;
+        left: 600px;
+    }
+
+    .donde-encontrarnos {
+        position: relative;
+        left: 550px;
+    }
+
+    .formulario {
+        position: relative;
+        left: 75px;
+    }
+
+    .bio-empresa {
+        width: 132vh;
+        position: relative;
+        left: 28px;
+    }
+
+    .titulo-nosotros {
+        width: 132vh;
+        position: relative;
+        left: 30px;
+    }
+
+    .datos-pie {
+        position: relative;
+        left: 600px;
+    }
+
+}
+
+@media (max-width:768px) {
+
+    .header-nosotros {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .barra-navegacion {
+        width: 95vw;
+        position: relative;
+        left: 5px;
+        padding: 5px;
+        padding-bottom: 10px;
+        margin: 0;
+    }
+
+
+    .barra-navegacion li a {
+        padding-inline-start: 20px;
+        font-size: 18px;
+    }
+
+
+    .titulos {
+        width: 85vh;
+        font-size: 18px;
+        position: relative;
+        right: 10px;
+        margin-top: .3125rem;
+    }
+
+
+    .marcas {
+        position: relative;
+        left: 510px;
+        bottom: 300px;
+        width: 250px;
+    }
+
+    .renault {
+        position: relative;
+        right: 50px;
+    }
+
+    .pie-index-contacto {
+        position: relative;
+        top: 200px;
+    }
+
+    .titulo-nosotros {
+        width: 60vh;
+    }
+
+    .bio-empresa {
+        width: 65vw;
+        position: relative;
+        left: 10px;
+        padding: 0;
+    }
+
+    .datos-pie {
+        position: relative;
+        right: 350px;
+    }
+
+    .donde-encontrarnos {
+        position: relative;
+        top: 20px;
+        left: 100px;
+    }
+}
+
+@media (max-width:425px) {
+    body {
+        width: 42.5vh;
+    }
+
+    .header-nosotros {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        width: 69vh;
+    }
+
+    .index-nosotros {
+        width: 69vh;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .barra-navegacion {
+        flex-direction: column;
+        width: 45vh;
+        padding-bottom: 0;
+        position: relative;
+        left: 60px;
+    }
+
+    .barra-navegacion li a {
+        font-size: 10px;
+    }
+
+    .titulos {
+        width: 100%;
+        position: relative;
+        left: 60px;
+    }
+
+    .titulo-nosotros {
+        width: 35vh;
+        position: relative;
+        left: 15px;
+        margin-top: 5px;
+        margin-bottom: .625rem;
+        padding-top: 5px;
+        font-size: 15px;
+    }
+
+    .formulario {
+        width: 150%;
+        height: auto;
+        position: relative;
+        left: 0.34rem;
+        padding-bottom: 10px;
+    }
+
+    .donde-encontrarnos {
+        position: relative;
+        left: 50px;
+    }
+
+    .bio-empresa {
+        width: 32vh;
+        align-items: self-start;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .bio-empresa p {
+        width: 100%;
+        align-items: center;
+        text-align: left;
+        font-size: 12px;
+    }
+
+    .pie-index-contacto {
+        width: 150%;
+    }
+
+    .pie-index-nosotros {
+        width: 69vh;
+    }
+
+    .pie-index-0km {
+        width: 125vh;
+        position: relative;
+        top: 100px;
+    }
+
+    .marcas {
+        position: relative;
+        left: 110px;
+        bottom: 0;
+        top: 20px;
+        width: 250px;
+    }
+
+    .datos-pie {
+        position: relative;
+        left: 150px;
+        bottom: 150px;
+    }
+
+    .datos-pie p {
+        font-size: 12px;
+        position: relative;
+        left: 50px;
+        top: 0;
+
+    }
+
+    .dir {
+        position: relative;
+        top: 8px;
+    }
+
+    .tel {
+        position: relative;
+        top: 8px;
+    }
+}

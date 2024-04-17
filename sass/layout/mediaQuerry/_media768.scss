@@ -1,0 +1,74 @@
+@media (max-width:768px) {
+
+    .header-nosotros {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .barra-navegacion {
+        width: 95vw;
+        position: relative;
+        left: 5px;
+        padding: 5px;
+        padding-bottom: 10px;
+        margin: 0;
+
+        li {
+            a {
+                padding-inline-start: 20px;
+                font-size: 18px;
+            }
+        }
+
+        .titulos {
+            width: 85vh;
+            font-size: 18px;
+            position: relative;
+            right: 10px;
+            margin-top: .3125rem;
+        }
+    }
+
+
+
+
+    .marcas {
+        position: relative;
+        left: 510px;
+        bottom: 300px;
+        width: 250px;
+    }
+
+    .renault {
+        position: relative;
+        right: 50px;
+    }
+
+    .pie-index-contacto {
+        position: relative;
+        top: 200px;
+    }
+
+    .titulo-nosotros {
+        width: 60vh;
+    }
+
+    .bio-empresa {
+        width: 65vw;
+        position: relative;
+        left: 10px;
+        padding: 0;
+    }
+
+    .datos-pie {
+        position: relative;
+        right: 350px;
+    }
+
+    .donde-encontrarnos {
+        position: relative;
+        top: 20px;
+        left: 100px;
+    }
+}

@@ -1,0 +1,63 @@
+.section-0km {
+    background-image: url(../assets/img/fondo-ok.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-position-y: ; */
+    background-size: 56.25rem;
+    background-blend-mode: lighten;
+    background-color: rgba(255, 255, 255, 0.573);
+
+    .marcas {
+        width: 21.875rem;
+        height: 25rem;
+        border: 2px solid black;
+        border-radius: 20px;
+        position: relative;
+        bottom: 350px;
+        left: 800px;
+        text-align: center;
+
+        .mercedes {
+            position: relative;
+            top: 30px;
+            left: 10px;
+        }
+
+        .bmw {
+            position: relative;
+            top: 50px;
+            left: 50px;
+        }
+
+        .kia {
+            position: relative;
+            top: 120px;
+            right: 100px;
+        }
+
+        .ford {
+            position: relative;
+            top: 160px;
+            right: 10px;
+        }
+
+        .renault {
+            position: relative;
+            top: 230px;
+            right: 220px;
+        }
+
+        .citroen {
+            position: relative;
+            top: 250px;
+        }
+    }
+}
+
+.pie-index-0km {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    bottom: 210px;
+    background-color: rgb(198, 13, 13);
+}

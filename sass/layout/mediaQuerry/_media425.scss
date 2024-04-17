@@ -1,0 +1,130 @@
+@media (max-width:425px) {
+    body {
+        width: 42.5vh;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .header-nosotros {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        width: 69vh;
+    }
+
+    .index-nosotros {
+        width: 69vh;
+    }
+
+
+    .barra-navegacion {
+        flex-direction: column;
+        width: 45vh;
+        padding-bottom: 0;
+        position: relative;
+        left: 60px;
+
+        li {
+            a {
+                font-size: 10px;
+            }
+        }
+
+        .titulos {
+            width: 100%;
+            position: relative;
+            left: 60px;
+        }
+    }
+
+
+
+    .titulo-nosotros {
+        width: 35vh;
+        position: relative;
+        left: 15px;
+        margin-top: 5px;
+        margin-bottom: .625rem;
+        padding-top: 5px;
+        font-size: 15px;
+    }
+
+    .formulario {
+        width: 150%;
+        height: auto;
+        position: relative;
+        left: 0.34rem;
+        padding-bottom: 10px;
+    }
+
+    .donde-encontrarnos {
+        position: relative;
+        left: 50px;
+    }
+
+    .bio-empresa {
+        width: 32vh;
+        align-items: self-start;
+        margin-top: 0;
+        padding: 0;
+
+        p {
+            width: 100%;
+            align-items: center;
+            text-align: left;
+            font-size: 12px;
+        }
+
+    }
+
+
+    .pie-index-contacto {
+        width: 150%;
+    }
+
+    .pie-index-nosotros {
+        width: 69vh;
+    }
+
+    .pie-index-0km {
+        width: 125vh;
+        position: relative;
+        top: 100px;
+    }
+
+    .marcas {
+        position: relative;
+        left: 110px;
+        bottom: 0;
+        top: 20px;
+        width: 250px;
+    }
+
+    .datos-pie {
+        position: relative;
+        left: 150px;
+        bottom: 150px;
+
+        p {
+            font-size: 12px;
+            position: relative;
+            left: 50px;
+            top: 0;
+
+        }
+    }
+
+
+    .dir {
+        position: relative;
+        top: 8px;
+    }
+
+    .tel {
+        position: relative;
+        top: 8px;
+    }
+}

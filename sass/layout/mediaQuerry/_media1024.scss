@@ -1,0 +1,55 @@
+@media (max-width:1024px) {
+    header {
+        /* justify-content: space-around; */
+    }
+
+    .barra-navegacion {
+        width: 90vw;
+        position: relative;
+        left: 50px;
+
+        li {
+            a {
+                font-size: 20px;
+            }
+        }
+    }
+
+
+    .titulos {
+        width: 132vh;
+    }
+
+    .marcas {
+        position: relative;
+        left: 600px;
+    }
+
+    .donde-encontrarnos {
+        position: relative;
+        left: 550px;
+    }
+
+    .formulario {
+        position: relative;
+        left: 75px;
+    }
+
+    .bio-empresa {
+        width: 132vh;
+        position: relative;
+        left: 28px;
+    }
+
+    .titulo-nosotros {
+        width: 132vh;
+        position: relative;
+        left: 30px;
+    }
+
+    .datos-pie {
+        position: relative;
+        left: 600px;
+    }
+
+}
