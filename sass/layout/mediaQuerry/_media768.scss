@@ -1,84 +1,172 @@
 @media (max-width:768px) {
 
+    .navbar-toggler {
+        position: relative;
+        right: 575px;
+    }
+
+    /** media del index*/
+    .general {
+        .barra-navegacion {
+            width: 80%;
+            display: flex;
+            left: 100px;
+
+            li {
+                a {
+                    font-size: 20px;
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+            }
+        }
+
+        .section-principal {
+
+            .logo {
+                position: relative;
+                left: 180px;
+            }
+
+            .img-ultimo-ingreso {
+                position: relative;
+                left: 200px;
+            }
+
+            .ultimo-ingreso {
+                position: relative;
+                left: 110px;
+                top: 450px;
+            }
+        }
+
+        .boton-principal {
+            position: relative;
+            left: 170px;
+            bottom: 10px;
+        }
+
+        footer {
+
+
+            .pie-index {
+                .datos-pie {
+                    position: relative;
+                    left: 450px;
+                }
+            }
+        }
+    }
+
+
+    /**media de 0km*/
+    .section-0km {
+
+        .marcas {
+            width: 250px;
+            position: relative;
+            left: 490px;
+
+            .renault {
+                position: relative;
+                right: 40px;
+            }
+        }
+    }
+
+    .pie-index-0km {
+        .datos-pie {
+            position: relative;
+            left: 400px;
+        }
+    }
+
+    /**media de usados*/
+
+    .ultimo-ingreso-usados {
+        position: relative;
+        left: 150px;
+        top: 60px;
+    }
+
+    .otros-usados {
+        height: auto;
+        position: relative;
+        left: 200px;
+        bottom: 0px;
+        top: 80px;
+    }
+
+    .pie-index-usados {
+        position: relative;
+        top: 500px;
+
+        .datos-pie {
+            position: relative;
+            left: 400px;
+        }
+    }
+
+    /**media de contacto*/
+
+    .main-contacto {
+
+        .formulario {
+            width: max-content;
+            height: max-content;
+            padding-left: 1px;
+            position: relative;
+            left: 20px;
+            top: 70px;
+        }
+
+        .donde-encontrarnos {
+            width: 40vh;
+            position: relative;
+            left: 420px;
+        }
+
+    }
+
+    .pie-index-contacto {
+
+        .datos-pie {
+            position: relative;
+            left: 400px;
+
+        }
+
+    }
+
+    /**media de nosotros*/
+
     .header-nosotros {
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
 
-    .barra-navegacion {
-        width: 95vw;
-        position: relative;
-        left: 5px;
-        padding: 5px;
-        padding-bottom: 10px;
-        margin: 0;
-
-        li {
-            a {
-                padding-inline-start: 20px;
-                font-size: 18px;
-            }
-        }
-
-        .titulos {
-            width: 85vh;
-            font-size: 18px;
+    .main-nosotros {
+        .titulo-nosotros {
             position: relative;
-            right: 10px;
-            margin-top: .3125rem;
+            top: 30px;
         }
-    }
 
-    .marcas {
-        width: 250px;
-        position: relative;
-        top: 70px;
-        left: 150px;
-
-        .renault {
+        .bio-empresa {
             position: relative;
-            right: 50px;
+            top: 40px;
+            padding: 30px;
         }
-
     }
 
-
-
-    .pie-index-contacto {
+    .pie-index-nosotros {
         position: relative;
-        top: 200px;
-    }
-
-    .pie-index-0km {
-        position: relative;
-        top: 200px;
+        top: 220px;
 
         .datos-pie {
             position: relative;
-            left: 100px;
+            left: 400px;
         }
-    }
 
-    .titulo-nosotros {
-        width: 60vh;
-    }
-
-    .bio-empresa {
-        width: 65vw;
-        position: relative;
-        left: 10px;
-        padding: 0;
-    }
-
-    .datos-pie {
-        position: relative;
-        left: 200px;
-    }
-
-    .donde-encontrarnos {
-        position: relative;
-        top: 20px;
-        left: 100px;
     }
 }

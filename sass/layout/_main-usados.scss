@@ -1,3 +1,14 @@
+.main-usados {
+    background-image: url(../assets/img/usado2.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-blend-mode: lighten;
+    background-color: rgba(255, 255, 255, 0.573);
+
+}
+
+
 .ultimo-ingreso-usados {
     width: 31.25rem;
     height: auto;
@@ -7,7 +18,8 @@
     border: 1px solid black;
     border-radius: 20px;
     position: relative;
-    left: 150px;
+    top: 150px;
+    left: 170px;
 
     .usado-principal {
         width: 28.125rem;
@@ -44,47 +56,52 @@
 
 .otros-usados {
     width: 31.25rem;
-    height: 550px;
+    height: 34.375rem;
     border: 2px solid black;
     border-radius: 20px;
     position: relative;
-    left: 900px;
-    bottom: 520px;
+    left: 870px;
+    bottom: 420px;
     background-color: aquamarine;
     text-align: center;
 
     .grid-usados {
         display: grid;
-        margin: 50px;
+        margin: 10px;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        gap: 3px;
-
-        img {
-            width: 80%;
-            height: 80%;
-            object-fit: cover;
-            display: block;
-
-        }
+        grid-template-rows: repeat(4, 0.65fr);
+        gap: 10px;
 
         .usado {
             overflow: hidden;
             border-radius: 30px;
             border: 2px solid black;
+            align-items: center;
+            object-fit: contain;
 
-            &:hover {
-                opacity: 0.5;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                align-items: center;
+                display: block;
+
+                &:hover {
+                    opacity: 0.5;
+                }
             }
+
+
         }
     }
 }
+
 
 .pie-index-usados {
     width: 100%;
     height: 15.625rem;
     position: relative;
-    bottom: 510px;
+
 
     background-color: rgb(198, 13, 13);
 

@@ -1,53 +1,167 @@
 @media (max-width:1024px) {
-    header {}
 
-    .barra-navegacion {
-        width: 90vw;
+    .navbar-toggler {
         position: relative;
-        left: 50px;
+        right: 800px;
+    }
 
-        li {
-            a {
-                font-size: 20px;
+    header {
+        .barra-navegacion {
+            width: 80%;
+            position: relative;
+            left: 100px;
+            display: flex;
+
+            li {
+                a {
+                    font-size: 20px;
+                    margin-left: 0;
+                    margin-right: 0;
+                }
             }
         }
     }
 
 
+
     .titulos {
-        width: 132vh;
+        width: 80%;
     }
 
-    .marcas {
-        position: relative;
-        left: 600px;
+
+    /** media del index*/
+    .general {
+        background-size: cover;
+
+        .section-principal {
+
+            div {
+                position: relative;
+                right: 80px;
+                top: 30px;
+            }
+
+            .ultimo-ingreso {
+                position: relative;
+                left: 250px;
+                top: 550px;
+            }
+        }
+
+        .boton-principal {
+            position: relative;
+            left: 450px;
+            bottom: 110px;
+        }
+
+        .pie-index {
+            position: relative;
+            top: 20px;
+        }
     }
 
-    .donde-encontrarnos {
-        position: relative;
-        left: 550px;
+    /** media de 0km*/
+
+    .section-0km {
+        .container-fluid {
+            position: relative;
+            right: 150px;
+
+        }
+
+        .marcas {
+            position: relative;
+            left: 600px;
+        }
     }
 
-    .formulario {
-        position: relative;
-        left: 75px;
+    .pie-index-0km {
+
+
+        .datos-pie {
+            position: relative;
+            left: 600px;
+        }
     }
 
-    .bio-empresa {
-        width: 132vh;
+    /**media de usados*/
+
+    .ultimo-ingreso-usados {
         position: relative;
-        left: 28px;
+        left: 50px;
+
+        .usado-principal {
+            width: 400px;
+        }
     }
 
-    .titulo-nosotros {
-        width: 132vh;
+    .otros-usados {
+        width: 400px;
         position: relative;
-        left: 30px;
+        left: 590px;
+        bottom: 370px;
     }
 
-    .datos-pie {
-        position: relative;
-        left: 600px;
+    .pie-index-usados {
+        .datos-pie {
+            position: relative;
+            left: 700px;
+        }
     }
+
+    /**media de contacto*/
+
+    .main-contacto {
+
+
+        .donde-encontrarnos {
+            position: relative;
+            left: 580px;
+        }
+
+        .formulario {
+            position: relative;
+            left: 75px;
+        }
+
+    }
+
+    .pie-index-contacto {
+
+        .datos-pie {
+            position: relative;
+            left: 600px;
+
+        }
+
+    }
+
+    /**media de nosotros*/
+    .main-nosotros {
+        .bio-empresa {
+            width: 85%;
+            position: relative;
+            left: 0px;
+            top: 50px;
+        }
+
+        .titulo-nosotros {
+            width: 85%;
+            position: relative;
+            left: 0px;
+        }
+    }
+
+    .pie-index-nosotros {
+        position: relative;
+        top: 210px;
+
+        .datos-pie {
+            position: relative;
+            left: 500px;
+        }
+
+    }
+
 
 }

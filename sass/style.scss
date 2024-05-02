@@ -1,8 +1,3 @@
-/**llamado de utilities*/
-
-@import "./utilities/maps";
-
-
 /**llamado de archivos de base*/
 
 @import "./base/reset";
@@ -22,7 +17,7 @@
 
 
 /**llamado de query*/
-
+@import "./layout/mediaQuerry/media1920";
 @import "./layout/mediaQuerry/media1440";
 @import "./layout/mediaQuerry/media1024";
 @import "./layout/mediaQuerry/media768";
